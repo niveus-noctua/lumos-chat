@@ -2,7 +2,7 @@ function getData(obj_form) {
     var hData = {};
 
     $('input, textarea, select', obj_form).each(function () {
-        if (this.name && this.name != '') {
+        if (this.name && this.name !== '') {
             hData[this.name] = this.value;
             console.log('hData[' + this.name + '] = ' + hData[this.name]);
         }
@@ -18,12 +18,13 @@ function registerNewUser() {
     $.ajax({
         type: 'POST',
         async: false,
-        url:"/user/register",
+        url:"?controller=user&action=register",
         data: postData,
         dataType: 'json',
         success: function (data) {
             if (data['success']) {
-                data['message'];
+                location.href= '?controller=user&action=chat';
+                alert('Регистрация прошла успешно!');
             } else {
                 alert(data['message']);
             }
