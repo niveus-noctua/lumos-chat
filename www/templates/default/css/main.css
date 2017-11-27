@@ -1,0 +1,63 @@
+.lumos-navbar-links a{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.lumos-form {
+    float: right;
+    padding-left: 300px;
+}
+
+.lumos-chat-body {
+    padding: 100px 100px 100px 100px;
+}
+
+.lumos-footer {
+    margin-top: 200px;
+    height: 50px;
+}
+
+.messages-list li {
+    float: left;
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    width: 100%;
+}
+
+.message {
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    padding: 10px;
+    background-color: #9fcdff;
+    list-style-type: none;
+    border-radius: 25px;
+}
+
+.message_r{
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(89,120,178,0.16);
+    list-style-type: none;
+    border-radius: 25px;
+}
+
+.messages-list2 li {
+    float: right;
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    background-color: #6c757d;
+    list-style-type: none;
+    border-radius: 25px;
+}
+
+input {
+    border-radius: 25px;
+}
